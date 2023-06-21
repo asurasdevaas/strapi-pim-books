@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products_by_stores",
+  "info": {
+    "singularName": "products-by-store",
+    "pluralName": "products-by-stores",
+    "displayName": "Products_by_store"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "availability": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::availability.availability"
+    },
+    "store": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::store.store"
+    }
+  }
+}
